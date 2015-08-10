@@ -1,0 +1,9 @@
+body {
+    background-color: #444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* override the default bootstrap .container-fluid class so there is no padding */
+.container-fluid {
+    padding: 0;
+}

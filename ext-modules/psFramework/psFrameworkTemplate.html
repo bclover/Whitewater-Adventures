@@ -1,0 +1,43 @@
+<!-- Display the Titlebar -->
+<div class="ps-title-bar">
+
+	<div class="row">
+		<div class="ps-logo-area col-sm-6">
+			<img class="ps-icon" ng-src="{{ iconFile }}">
+
+			<!--Title & Subtitle Text -->
+			<div class="ps-title-area">
+				<p class="ps-logo-title">{{ title }}</p>
+
+				<p class="ps-logo-subtitle">{{ subtitle }}</p>
+			</div>
+
+			<!--Menu Button for Small Devices -->
+			<div class="ps-collapsed-menu pull-right" ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()">
+				<button type="button" class="btn ps-nav-button">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+
+		</div>
+
+		<!-- Title Bar Controls -->
+		<div class="ps-right-side-controls col-sm-6">
+			<div>
+				<button class="btn btn-primary">Button 1</button>
+				<button class="btn btn-success">Button 2</button>
+				<button class="btn btn-warning">Button 3</button>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Include the Menu -->
+<div ng-transclude></div>
+
+<!--Include the Dashboard -->
+<div ng-view class="ps-view" ng-class="{'ps-view-full-width': !isMenuVertical || !isMenuVisible}">
+
+</div>
