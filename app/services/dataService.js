@@ -120,13 +120,10 @@ angular.module('app').factory('dataService',
 
 			var getLocation = function(id){
 				return $timeout(function(){
-					for(var i = 0; i < locations.length; i++){
-						if(locations[i].id === id){
+					for(var i = 0; i < locations.length; i++)
+						if(locations[i].id === id)
 							return locations[i];
-						}else{
-							return undefined;
-						}
-					}
+					return undefined;
 				}, 300);
 			};
 
@@ -138,13 +135,10 @@ angular.module('app').factory('dataService',
 
 			var getEmployee = function(id){
 				return $timeout(function(){
-					for(var i = 0; i < employees.length; i++){
-						if(employees[i].id === id){
+					for(var i = 0; i < employees.length; i++)
+						if(employees[i].id === id)
 							return employees[i];
-						}else{
-							return undefined;
-						}
-					}
+					return undefined;
 				}, 300);
 			};
 

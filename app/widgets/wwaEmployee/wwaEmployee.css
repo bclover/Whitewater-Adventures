@@ -3,11 +3,17 @@
 }
 
 .wwa-employee-heading {
-
+    background-color: darkred;
+    color: white;
+    height: 32px;
+    padding-top: 2px;
+    font-size: 15px;
+    line-height: 32px;
 }
 
 .wwa-employee-icon {
-
+    padding-bottom: 8px;
+    padding-left: 5px;
 }
 
 .www-employee-title {
@@ -15,18 +21,25 @@
 }
 
 .wwa-employee-body {
-
+    padding: 0;
 }
 
 .wwa-employee-row {
-
+    padding: 0;
 }
 
 .wwa-employee-name-area {
-
+    color: white;
+    background-color: #0f0f0f;
 }
 
 .wwa-employee-picture-area {
-
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    -webkit-background-size: cover;
+    width: 150px;
+    height: 138px;
+    overflow: hidden;
 }
 
