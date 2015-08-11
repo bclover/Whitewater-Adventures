@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 angular.module('psFramework').controller('psFrameworkController',
 	['$location', '$rootScope', '$scope', '$timeout', '$window', 'Events',

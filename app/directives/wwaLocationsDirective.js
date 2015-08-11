@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 angular.module('app').directive('wwaLocations',
 	[
@@ -6,7 +6,7 @@ angular.module('app').directive('wwaLocations',
 			return {
 				scope: {},
 				template: '<h1>Locations Template</h1>'
-			}
+			};
 		}
 	]
 );

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 angular.module('psMenu').controller('psMenuController',
 	['$rootScope', '$scope', 'Events',

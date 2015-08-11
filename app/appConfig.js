@@ -5,8 +5,8 @@ angular.module('app').config(function($provide){
 				return function(exception, cause){
 					$delegate(exception, cause);
 					alert(exception.message);
-				}
+				};
 			}
 		]
-	)
+	);
 });

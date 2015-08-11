@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module.('app').factory('dataService',
+angular.module('app').factory('dataService',
 	['$timeout',
 		function($timeout){
 
@@ -112,15 +112,15 @@ angular.module.('app').factory('dataService',
 				}
 			];
 
-			var getLocations = function() {
-				return $timeout(function() {
+			var getLocations = function(){
+				return $timeout(function(){
 					return locations;
 				}, 500);
 			};
 
-			var getLocation = function(id) {
-				return $timeout(function() {
-					for(var i=0; i<locations.length; i++){
+			var getLocation = function(id){
+				return $timeout(function(){
+					for(var i = 0; i < locations.length; i++){
 						if(locations[i].id === id){
 							return locations[i];
 						}else{
@@ -130,15 +130,15 @@ angular.module.('app').factory('dataService',
 				}, 300);
 			};
 
-			var getEmployees = function() {
-				return $timeout(function() {
+			var getEmployees = function(){
+				return $timeout(function(){
 					return employees;
 				}, 500);
 			};
 
-			var getEmployee = function(id) {
-				return $timeout(function() {
-					for(var i=0; i<employees.length; i++){
+			var getEmployee = function(id){
+				return $timeout(function(){
+					for(var i = 0; i < employees.length; i++){
 						if(employees[i].id === id){
 							return employees[i];
 						}else{
