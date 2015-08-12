@@ -1,5 +1,10 @@
 .wwa-inventory-widget{
-
+    height: 100%;
+    width: 100%;
+    min-height: 180px;
+    font-size: 16px;
+    color: black;
+    overflow: hidden;
 }
 
 .wwa-inventory-heading {
@@ -19,29 +24,37 @@
 }
 
 .wwa-inventory-body {
-
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5px;
 }
 
 .wwa-inventory-area {
-
+    background-color: white;
+    border: 1px solid #080808;
+    margin: 0 auto;
+    opacity: .75;
+    text-align: center;
+    width: 90%;
 }
 
 .wwa-inventory-river-name{
-
+    font-weight: bold;
+    padding: 10px 0px 10px;
 }
 
 .wwa-inventory-item {
-
+    display: inline-block;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .wwa-inventory-amount {
-
+    font-size: 22px;
 }
 
 .wwa-inventory-caption {
-
-}
-
-.wwa-inventory-caption {
-
+    white-space: nowrap;
 }
