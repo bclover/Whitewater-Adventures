@@ -3,11 +3,15 @@
 }
 
 .wwa-inventory-heading {
-
+    background-color: darkred;
+    color: white;
+    height: 32px;
+    font-size: 15px;
+    line-height: 32px;
 }
 
 .wwa-inventory-icon {
-
+    padding-left: 5px;
 }
 
 .www-inventory-title {
