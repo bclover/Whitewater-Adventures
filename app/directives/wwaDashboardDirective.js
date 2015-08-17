@@ -10,7 +10,7 @@ angular.module('app').directive('wwaDashboard',
 
 					scope.title = 'Dashboard';
 
-					scope.gridsterOpts={
+					scope.gridsterOpts = {
 						columns: 12,
 						margins: [20, 20],
 						outerMargin: false,
@@ -19,7 +19,49 @@ angular.module('app').directive('wwaDashboard',
 						swapping: false
 					};
 
-					scope.widgets=[
+					scope.widgetDefinitions = [
+						{
+							title: 'Temperature',
+							settings: {
+								sizeX: 4,
+								sizeY: 4,
+								minSizeX: 4,
+								minSizeY: 4,
+								template: '<wwa-temperature></wwa-temperature>',
+								widgetSettings: {
+									id: 1000
+								}
+							}
+						},
+						{
+							title: 'Inventory',
+							settings: {
+								sizeX: 6,
+								sizeY: 4,
+								minSizeX: 6,
+								minSizeY: 4,
+								template: '<wwa-inventory></wwa-inventory>',
+								widgetSettings: {
+									id: 1002
+								}
+							}
+						},
+						{
+							title: 'Employee',
+							settings: {
+								sizeX: 5,
+								sizeY: 4,
+								minSizeX: 5,
+								minSizeY: 4,
+								template: '<wwa-employee></wwa-employee>',
+								widgetSettings: {
+									id: 5001
+								}
+							}
+						}
+					];
+
+					scope.widgets = [
 						{
 							title: 'First',
 							sizeX: 4,
