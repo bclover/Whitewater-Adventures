@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="wwa-inventory-body"
-	     style="background-image: url(images/{{ selectedLocation.image }})">
+	     ng-style="selectedLocation != null && { 'background-image': 'url(images/' + selectedLocation.image + ')' }">
 
 		<div class="wwa-inventory-area">
 
