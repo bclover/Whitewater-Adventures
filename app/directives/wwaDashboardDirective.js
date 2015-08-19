@@ -13,6 +13,8 @@ angular.module('app').directive('wwaDashboard',
 					scope.gridsterOpts = {
 						columns: 12,
 						margins: [20, 20],
+						mobileBreakPoint: 600,
+						mobileModeEnabled: true,
 						outerMargin: false,
 						pushing: true,
 						floating: true,
