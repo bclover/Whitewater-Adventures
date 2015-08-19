@@ -18,32 +18,50 @@
 }
 
 .wwa-employee-body {
-    min-height: 298px;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 100%;
 }
-.wwa-employee-name-area > h4, .wwa-employee-name-area > p {
-    margin: 0;
-    padding: 0;
+.wwa-employee-body .fa-spin {
+    position: absolute;
+    top: 35%;
+    left: 45%;
 }
 
 .wwa-employee-row {
-    height: 100%;
 }
 
 .wwa-employee-name-area {
+    position: absolute;
     color: white;
     background-color: #0f0f0f;
     height: 100%;
+    z-index: 1;
+    left: 0;
+    padding: 10px 5px 0;
+}
+
+.wwa-employee-name-area > h4 {
+    margin: 0 auto;
+    padding: 5px 5px 0;
+    font-size: 12px;
+}
+
+.wwa-employee-name-area > p {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
 }
 
 .wwa-employee-picture-area {
     position: absolute;
-    top: 33px;
-    left: 50%;
-    /*-webkit-background-size: cover;*/
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
+    z-index: 0;
+    /*left: 145px;*/
 }
 

@@ -139,7 +139,7 @@ angular.module('app').factory('dataService',
 						if(employees[i].id === id)
 							return employees[i];
 					return undefined;
-				}, 300);
+				}, 1500);
 			};
 
 			return {

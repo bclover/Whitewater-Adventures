@@ -7,9 +7,11 @@ angular.module('app').directive('wwaEmployee',
 				templateUrl: 'app/widgets/wwaEmployee/wwaEmployeeTemplate.html',
 				link: function(scope, el, attrs) {
 					scope.selectedEmployee = null;
+					scope.isLoaded = false;
 					dataService.getEmployee(scope.item.widgetSettings.id)
 						.then(function (data) {
 							scope.selectedEmployee = data;
+							scope.isLoaded = true;
 						});
 				}
 			};
