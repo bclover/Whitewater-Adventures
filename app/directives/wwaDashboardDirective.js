@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('app').directive('wwaDashboard',
-	[
-		function(){
+	['$localStorage',
+		function($localStorage){
 			return {
 				scope: {},
 				template: '<ps-dashboard></ps-dashboard></h1>',
@@ -69,12 +69,22 @@ angular.module('app').directive('wwaDashboard',
 						}
 					];
 
-					scope.widgets = [];
+					//load any widgets that have been saved to local storage or instantiate
+					//an empty array if local storage does not have any saved widgets
+					scope.widgets = $localStorage.widgets || [];
 
-					//initialize one of each type of widget
-					scope.widgets.push(scope.widgetDefinitions[0].settings);
-					scope.widgets.push(scope.widgetDefinitions[1].settings);
-					scope.widgets.push(scope.widgetDefinitions[2].settings);
+					//if there are no widgets initialize one of each type of widget
+					if(scope.widgets.length === 0){
+						scope.widgets.push(scope.widgetDefinitions[0].settings);
+						scope.widgets.push(scope.widgetDefinitions[1].settings);
+						scope.widgets.push(scope.widgetDefinitions[2].settings);
+					}
+					
+					//watch for changes to the widgets and store them locally
+					scope.$watch('widgets', function() {
+						$localStorage.widgets = scope.widgets;
+					});
+
 				}
 			};
 		}

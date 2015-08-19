@@ -1,6 +1,6 @@
 'use strict';
 
-var app=angular.module('app', ['ngRoute', 'psFramework']);
+var app=angular.module('app', ['ngRoute', 'psFramework', 'ngStorage']);
 
 app.constant('Events', {
 		MENU_ITEM_SELECTED:      'ps-menu-item-selected-event',

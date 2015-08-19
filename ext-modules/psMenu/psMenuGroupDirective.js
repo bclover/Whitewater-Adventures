@@ -9,7 +9,7 @@ angular.module('psMenu').directive('psMenuGroup', function() {
 			icon: '@'
 		},
 		templateUrl: 'ext-modules/psMenu/psMenuGroupTemplate.html',
-		link: function(scope, el, attr, ctrl) {
+		link: function(scope, el, attrs, ctrl) {
 
 			scope.isOpen = false;
 
