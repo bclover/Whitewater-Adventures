@@ -69,9 +69,12 @@ angular.module('app').directive('wwaDashboard',
 						}
 					];
 
-					scope.widgets = [
+					scope.widgets = [];
 
-					];
+					//initialize one of each type of widget
+					scope.widgets.push(scope.widgetDefinitions[0].settings);
+					scope.widgets.push(scope.widgetDefinitions[1].settings);
+					scope.widgets.push(scope.widgetDefinitions[2].settings);
 				}
 			};
 		}

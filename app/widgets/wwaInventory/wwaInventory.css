@@ -24,10 +24,17 @@
 }
 
 .wwa-inventory-body {
+    position: relative;
     height: 100%;
     background-position: center;
     background-size: cover;
     padding-top: 5px;
+}
+
+.wwa-inventory-body .fa-spin {
+    position: absolute;
+    top: 35%;
+    left: 45%;
 }
 
 .wwa-inventory-area {
