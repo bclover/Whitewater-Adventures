@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 angular.module('psMenu').directive('psMenuItem', function() {
     return {
