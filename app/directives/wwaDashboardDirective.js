@@ -25,10 +25,10 @@ angular.module('app').directive('wwaDashboard',
 						{
 							title: 'Temperature',
 							settings: {
-								sizeX: 4,
-								sizeY: 4,
-								minSizeX: 4,
-								minSizeY: 4,
+								sizeX: 3,
+								sizeY: 3,
+								minSizeX: 3,
+								minSizeY: 3,
 								template: '<wwa-temperature></wwa-temperature>',
 								widgetSettings: {
 									id: 1000,
@@ -40,10 +40,10 @@ angular.module('app').directive('wwaDashboard',
 						{
 							title: 'Inventory',
 							settings: {
-								sizeX: 6,
-								sizeY: 4,
-								minSizeX: 6,
-								minSizeY: 4,
+								sizeX: 5,
+								sizeY: 3,
+								minSizeX: 5,
+								minSizeY: 3,
 								template: '<wwa-inventory></wwa-inventory>',
 								widgetSettings: {
 									id: 1002,
@@ -55,10 +55,10 @@ angular.module('app').directive('wwaDashboard',
 						{
 							title: 'Employee',
 							settings: {
-								sizeX: 5,
-								sizeY: 4,
-								minSizeX: 5,
-								minSizeY: 4,
+								sizeX: 4,
+								sizeY: 3,
+								minSizeX: 4,
+								minSizeY: 3,
 								template: '<wwa-employee></wwa-employee>',
 								widgetSettings: {
 									id: 5001,
@@ -79,7 +79,7 @@ angular.module('app').directive('wwaDashboard',
 						scope.widgets.push(scope.widgetDefinitions[1].settings);
 						scope.widgets.push(scope.widgetDefinitions[2].settings);
 					}
-					
+
 					//watch for changes to the widgets and store them locally
 					scope.$watch('widgets', function() {
 						$localStorage.widgets = scope.widgets;
